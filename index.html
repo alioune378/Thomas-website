@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>%TITLE%</title>
+    <meta name="description" content="%DESCRIPTION%" />
+    <meta name="robots" content="%ROBOTS%" />
+    <meta name="theme-color" content="#171A1F" />
+    %CANONICAL%
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="/brand/favicon-64.png" sizes="64x64" />
+    <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Thomas Contracting &amp; Scrap Removal" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="%TITLE%" />
+    <meta property="og:description" content="%DESCRIPTION%" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="%TITLE%" />
+    <meta name="twitter:description" content="%DESCRIPTION%" />
+    %OG_IMAGE_TAG%
+
+    <!-- Fonts: Barlow Condensed (headings) + Inter (body). Fallback stacks are set in CSS. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+    <link rel="stylesheet" href="%CSS%" />
+    %SCHEMA%
+  </head>
+  <body>
+    <noscript>
+      <p style="padding:2rem;font-family:sans-serif">
+        Thomas Contracting &amp; Scrap Removal, Lansing, NY. Please enable JavaScript to use this site.
+      </p>
+    </noscript>
+
+    <!-- Netlify Forms detection: mirrors the fields posted by src/components/EstimateForm.tsx -->
+    <form name="estimate" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="phone" />
+      <input name="email" />
+      <input name="service" />
+      <input name="location" />
+      <textarea name="description"></textarea>
+      <input name="contactMethod" />
+      <input name="consent" />
+      <input type="file" name="photos" multiple />
+    </form>
+
+    <div id="root"></div>
+    <script type="module" src="%JS%"></script>
+  </body>
+</html>
