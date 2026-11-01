@@ -40,7 +40,7 @@ export function Services() {
     <>
       <PageHero
         eyebrow="Services"
-        title="What Thomas can help with"
+        title="What we can help with"
         lead="Contracting, scrap removal and cleanup in Lansing and the greater Ithaca area. Not sure which one fits? Describe the job and we’ll point you in the right direction."
         image="/img/hero-900.webp"
       />
@@ -81,7 +81,7 @@ export function ServiceDetail() {
             </p>
             <p>
               Based in Lansing, NY. See the <Link to="/service-areas" className="text-link">service areas</Link> page or learn{' '}
-              <Link to="/about" className="text-link">about Thomas</Link>.
+              <Link to="/about" className="text-link">about {SITE.ownerName}</Link>.
             </p>
           </div>
           <aside className="detail__aside" data-reveal aria-label="Request an estimate">
@@ -169,7 +169,7 @@ export function ServiceAreas() {
           </div>
           <div className="areas__nearby" data-reveal>
             <h2 className="display display--sm">Nearby communities</h2>
-            <p>Thomas serves these communities around Lansing. Not on the list? Send a request and ask.</p>
+            <p>We serve these communities around Lansing. Not on the list? Send a request and ask.</p>
             <ul className="chips">
               {NEARBY_AREAS.map((a) => (
                 <li key={a} className="chip">{a}</li>

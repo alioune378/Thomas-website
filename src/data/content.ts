@@ -28,7 +28,7 @@ export const FAQS: Faq[] = [
   },
   {
     q: 'What areas do you cover?',
-    a: 'Thomas is based in Lansing, NY and serves Ithaca, Dryden, Trumansburg, Freeville, Groton and other Tompkins County communities. If you’re not sure whether you’re in range, send a request and ask.',
+    a: 'We’re based in Lansing, NY and serve Ithaca, Dryden, Trumansburg, Freeville, Groton and other Tompkins County communities. If you’re not sure whether you’re in range, send a request and ask.',
     needsReview: false,
   },
   {

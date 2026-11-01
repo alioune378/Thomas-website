@@ -2,7 +2,7 @@ import { EstimateForm } from '../components/EstimateForm';
 import { Icon } from '../components/Icon';
 import { Faqs, Gallery, HowItWorks, ServiceGrid, ValueProps } from '../components/sections';
 import { CallButton, EstimateButton, SectionHead } from '../components/ui';
-import { LOCATION_LINE } from '../config/site';
+import { LOCATION_LINE, SITE } from '../config/site';
 import { NEARBY_AREAS } from '../data/content';
 import { Link } from '../lib/router';
 
@@ -35,7 +35,7 @@ export default function Home() {
           </p>
           <div className="hero__cta">
             <EstimateButton label="Get a Free Estimate" />
-            <CallButton variant="ghost" label="Call Thomas" />
+            <CallButton variant="ghost" />
           </div>
           <p className="hero__loc"><Icon name="pin" size={18} /> {LOCATION_LINE}</p>
         </div>
@@ -51,7 +51,7 @@ export default function Home() {
           <SectionHead
             eyebrow="Services"
             title={<span id="svc-h">Cleanup and contracting help</span>}
-            lead="Tell us what you’re dealing with. If it’s something Thomas can help with, you’ll know the next steps."
+            lead="Tell us what you’re dealing with. If it’s something we can help with, you’ll know the next steps."
           />
           <ServiceGrid />
           <p className="section__more">
@@ -76,7 +76,7 @@ export default function Home() {
               estimate.
             </p>
             <div className="split__cta">
-              <Link to="/about" className="btn btn--outline">About Thomas</Link>
+              <Link to="/about" className="btn btn--outline">Meet {SITE.ownerName}</Link>
               <Link to="/service-areas" className="link-arrow">Service areas <Icon name="arrow" size={18} /></Link>
             </div>
           </div>

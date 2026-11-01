@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { PHONE } from '../config/site';
+import { PHONE, SITE } from '../config/site';
 import { Icon } from './Icon';
 import { Link } from '../lib/router';
 
@@ -37,7 +37,7 @@ export function SectionHead({
  */
 export function CallButton({
   variant = 'ghost',
-  label = 'Call Thomas',
+  label = `Call ${SITE.ownerName}`,
   className = '',
 }: {
   variant?: 'ghost' | 'dark' | 'solid';

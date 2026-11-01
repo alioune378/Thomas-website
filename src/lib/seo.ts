@@ -56,7 +56,7 @@ export const STATIC_ROUTES: RouteMeta[] = [
 export const SERVICE_ROUTES: RouteMeta[] = SERVICES.map((s) => ({
   path: `/services/${s.slug}`,
   title: `${s.title} in Lansing, NY | ${BRAND}`,
-  description: `${s.short} Request an estimate from Thomas in Lansing, NY.`,
+  description: `${s.short} Request an estimate from Thomas Contracting in Lansing, NY.`,
 }));
 
 export const NOT_FOUND_META: RouteMeta = {

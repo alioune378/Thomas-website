@@ -6,6 +6,8 @@
 export const SITE = {
   name: 'Thomas Contracting & Scrap Removal',
   shortName: 'Thomas',
+  /** Owner's first name: he answers the phone and does the work. */
+  ownerName: 'Zackary',
   tagline: 'Contracting • Scrap Removal',
   city: 'Lansing',
   region: 'NY',

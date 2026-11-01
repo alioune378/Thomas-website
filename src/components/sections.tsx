@@ -123,22 +123,3 @@ export function Gallery() {
   );
 }
 
-export function Reviews() {
-  return (
-    <section className="section section--paper section--tight" aria-labelledby="rev-h">
-      <div className="container">
-        <div className="reviews" data-reveal>
-          <div>
-            <p className="eyebrow">Customer reviews</p>
-            <h2 className="display display--sm" id="rev-h">Verified reviews coming soon</h2>
-            <p>
-              Placeholder: once Thomas has genuine customer reviews, they’ll be shown here exactly as written, with their
-              source. Nothing is displayed until then.
-            </p>
-          </div>
-          <span className="reviews__tag">Demo placeholder</span>
-        </div>
-      </div>
-    </section>
-  );
-}
