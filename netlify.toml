@@ -4,6 +4,8 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  SITE_URL = "https://thomas-contracting-lansing.com"
+  ALLOW_INDEXING = "true"
 
 # Every route is pre-rendered to its own index.html; this is the fallback for deep links.
 [[redirects]]

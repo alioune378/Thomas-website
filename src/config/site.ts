@@ -23,7 +23,7 @@ export const SITE = {
    *  - "demo":    validates, then clearly says nothing was sent (use until a backend is live)
    *  - "netlify": posts to Netlify Forms and only confirms when Netlify answers OK
    */
-  formMode: 'demo' as 'demo' | 'netlify',
+  formMode: 'netlify' as 'demo' | 'netlify',
 
   /** Shows small "Draft – Zackary to confirm" tags next to unverified copy. Set false at launch. */
   showReviewFlags: true,
