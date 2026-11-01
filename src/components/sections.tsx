@@ -99,29 +99,24 @@ export function Faqs({ limit }: { limit?: number }) {
   );
 }
 
-/** Clearly labelled demo gallery: illustrative images + empty before/after slots for real photos. */
+/** Real photos from Zackary's jobs. */
 export function Gallery() {
   return (
     <section className="section section--dark" aria-labelledby="gal-h">
       <div className="container">
         <SectionHead
-          eyebrow="Project gallery"
-          title={<span id="gal-h">Real project photos will go here</span>}
-          lead="This is a demo placeholder. The pictures below are illustrative AI-generated images, not Thomas projects. Once real photos are available, before-and-after pairs from completed jobs replace them."
+          eyebrow="On the job"
+          title={<span id="gal-h">Local, hands-on and ready to haul</span>}
+          lead="Zackary does the work himself, with his own truck and trailer. Here’s a look at recent pickups."
           light
         />
-        <div className="gallery">
+        <div className="gallery gallery--3">
           {GALLERY.map((g) => (
             <figure className="gallery__item" key={g.image} data-reveal>
-              <img src={g.image} alt={g.alt} width="800" height="500" loading="lazy" decoding="async" />
-              {g.illustrative && <span className="gallery__tag">Illustrative image</span>}
+              <img src={g.image} alt={g.alt} width={g.w} height={g.h} loading="lazy" decoding="async" />
               <figcaption>{g.caption}</figcaption>
             </figure>
           ))}
-          <div className="gallery__item gallery__slot" data-reveal>
-            <div className="slot"><span>Before</span><small>Photo pending</small></div>
-            <div className="slot slot--after"><span>After</span><small>Photo pending</small></div>
-          </div>
         </div>
       </div>
     </section>

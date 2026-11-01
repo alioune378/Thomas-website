@@ -375,3 +375,11 @@ html.js [data-reveal].is-in { opacity: 1; transform: none; }
   .display--lg { font-size: clamp(3rem, 5vw, 4.6rem); }
   .display--sm { font-size: 2.2rem; }
 }
+
+/* Real-photo gallery and owner portrait */
+.gallery--3 .gallery__item img { aspect-ratio: 4 / 3; object-position: center; }
+@media (min-width: 1000px) { .gallery.gallery--3 { grid-template-columns: repeat(3, 1fr); } }
+.owner { margin: 0; border-radius: var(--radius); overflow: hidden; background: var(--paper); border: 1px solid var(--line); box-shadow: var(--shadow); }
+.owner img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 30%; display: block; }
+.owner figcaption { padding: .9rem 1.1rem 1rem; display: grid; gap: .1rem; color: var(--slate-d); font-size: .95rem; }
+.owner figcaption strong { font-family: var(--head); text-transform: uppercase; letter-spacing: .04em; font-size: 1.35rem; color: var(--charcoal); }

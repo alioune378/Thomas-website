@@ -66,8 +66,9 @@ async function run() {
       ...(siteUrl && { url: abs('/'), image: abs('/img/og-image.jpg'), logo: abs('/brand/stacked.png') }),
       telephone: '+16072806926',
       areaServed: ['Lansing', 'Ithaca', 'Dryden', 'Trumansburg', 'Freeville', 'Groton'].map((n) => ({ '@type': 'City', name: n + ', NY' })),
-      address: { '@type': 'PostalAddress', addressLocality: 'Lansing', addressRegion: 'NY', addressCountry: 'US' },
-      // Intentionally omitted until verified: street address, hours, ratings.
+      address: { '@type': 'PostalAddress', streetAddress: '2611 Lansing Genoa Townline Rd', addressLocality: 'Lansing', addressRegion: 'NY', postalCode: '14882', addressCountry: 'US' },
+      email: 'info@thomas-contracting-lansing.com',
+      // Intentionally omitted until verified: hours, ratings.
     };
     return template
       .replaceAll('%TITLE%', esc(meta.title))

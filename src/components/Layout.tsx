@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { ReactNode } from 'react';
-import { LOCATION_LINE, PHONE, SITE } from '../config/site';
+import { LOCATION_LINE, MAPS_URL, PHONE, SITE } from '../config/site';
 import { SERVICES } from '../data/services';
 import { Link, useRouter } from '../lib/router';
 import { Icon } from './Icon';
@@ -136,7 +136,7 @@ function Footer() {
               </li>
             )}
             <li>
-              {SITE.city}, {SITE.regionLong}
+              <a href={MAPS_URL} target="_blank" rel="noopener">{SITE.street}<br />{SITE.city}, {SITE.region} {SITE.postal}</a>
             </li>
           </ul>
           <EstimateButton className="btn--sm footer__cta" />
@@ -146,9 +146,6 @@ function Footer() {
       <div className="container footer__legal">
         <p>
           © {new Date().getFullYear()} {SITE.name} · Website by {SITE.builtBy}
-        </p>
-        <p className="footer__demo">
-          Design demo. Images are illustrative AI-generated pictures, not photos of actual Thomas projects.
         </p>
       </div>
     </footer>

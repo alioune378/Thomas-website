@@ -1,6 +1,6 @@
 import { EstimateForm } from '../components/EstimateForm';
 import { Icon } from '../components/Icon';
-import { Faqs, Gallery, HowItWorks, Reviews, ServiceGrid, ValueProps } from '../components/sections';
+import { Faqs, Gallery, HowItWorks, ServiceGrid, ValueProps } from '../components/sections';
 import { CallButton, EstimateButton, SectionHead } from '../components/ui';
 import { LOCATION_LINE } from '../config/site';
 import { NEARBY_AREAS } from '../data/content';
@@ -17,7 +17,7 @@ export default function Home() {
             src="/img/hero-1600.webp"
             width="1600"
             height="900"
-            alt="Illustrative image: black work truck towing a dump trailer loaded with lumber and debris"
+            alt="Black work truck towing a dump trailer loaded with lumber and debris"
             fetchPriority="high"
             decoding="async"
           />
@@ -42,7 +42,6 @@ export default function Home() {
         <button type="button" className="hero__scroll" aria-label="Scroll to learn more" onClick={() => document.getElementById('value')?.scrollIntoView({ behavior: 'smooth' })}>
           <Icon name="chevron" size={26} />
         </button>
-        <span className="hero__credit">Illustrative image</span>
       </section>
 
       <ValueProps />
@@ -66,8 +65,7 @@ export default function Home() {
       <section className="section section--split" aria-labelledby="split-h">
         <div className="container split">
           <div className="split__media" data-reveal>
-            <img src="/img/crew-1200.webp" width="1200" height="675" alt="Illustrative image: crew loading a dump trailer beside a garage" loading="lazy" decoding="async" />
-            <span className="gallery__tag">Illustrative image</span>
+            <img src="/img/job-work-truck.webp" width="1200" height="900" alt="Zackary’s black Chevrolet Silverado work truck in Lansing, NY" loading="lazy" decoding="async" />
           </div>
           <div className="split__text" data-reveal>
             <p className="eyebrow">Local work. Personal service.</p>
@@ -86,7 +84,6 @@ export default function Home() {
       </section>
 
       <Gallery />
-      <Reviews />
 
       <section className="section section--paper" aria-labelledby="faq-h">
         <div className="container faq-wrap">

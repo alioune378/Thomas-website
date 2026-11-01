@@ -2,7 +2,7 @@ import { EstimateForm } from '../components/EstimateForm';
 import { Icon } from '../components/Icon';
 import { Faqs, HowItWorks, ServiceGrid } from '../components/sections';
 import { CallButton, EstimateButton, SectionHead } from '../components/ui';
-import { PHONE, SITE } from '../config/site';
+import { MAPS_URL, PHONE, SITE } from '../config/site';
 import { NEARBY_AREAS } from '../data/content';
 import { SERVICES, getService } from '../data/services';
 import { Link, useRouter } from '../lib/router';
@@ -47,9 +47,6 @@ export function Services() {
       <section className="section">
         <div className="container">
           <ServiceGrid />
-          <p className="note" data-reveal>
-            Preview note: the service list is shown for this demo and will be finalized with Thomas before launch.
-          </p>
         </div>
       </section>
       <HowItWorks />
@@ -117,7 +114,7 @@ export function ServiceDetail() {
 export function About() {
   return (
     <>
-      <PageHero eyebrow="About" title="Local work. Personal service." image="/img/crew-1200.webp" />
+      <PageHero eyebrow="About" title="Local work. Personal service." image="/img/job-work-truck.webp" />
       <section className="section">
         <div className="container about">
           <div className="about__text" data-reveal>
@@ -131,21 +128,19 @@ export function About() {
               Working with a local business means you can describe your project, ask your questions and talk it through
               directly, without going through a call center or a long form.
             </p>
-            <div className="placeholder-card">
-              <span className="placeholder-card__tag">Placeholder</span>
-              <h3>A note from Zackary</h3>
-              <p>A short personal message from the owner will go here, in his own words.</p>
-            </div>
+            <p>
+              Zackary runs the business and does the work himself, with his own truck and trailer. When you call or send
+              a request, you’re talking to the person who will show up to do the job.
+            </p>
           </div>
           <div className="about__side" data-reveal>
             <div className="about__logo">
               <img src="/brand/stacked.png" width="770" height="368" alt={`${SITE.name} logo`} loading="lazy" />
             </div>
-            <div className="photo-slot">
-              <Icon name="user" size={40} />
-              <strong>Owner photo</strong>
-              <small>Placeholder. A genuine photo of Zackary will be added.</small>
-            </div>
+            <figure className="owner">
+              <img src="/img/zackary-owner.webp" width="900" height="1200" alt="Zackary, owner of Thomas Contracting & Scrap Removal" loading="lazy" decoding="async" />
+              <figcaption><strong>Zackary</strong> Owner, Thomas Contracting &amp; Scrap Removal</figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -247,7 +242,7 @@ export function Contact() {
               )}
               <li>
                 <Icon name="pin" size={22} />
-                <div><strong>Location</strong><span>{SITE.city}, {SITE.regionLong} • {SITE.county}</span></div>
+                <div><strong>Address</strong><a href={MAPS_URL} target="_blank" rel="noopener">{SITE.street}<br />{SITE.city}, {SITE.region} {SITE.postal}</a></div>
               </li>
             </ul>
             <div className="contact__btns">
