@@ -15,7 +15,6 @@ const ACCEPT = ['image/jpeg', 'image/png', 'image/webp', 'image/heic', 'image/he
 const validate = (v: Values, files: File[]): Errors => {
   const e: Errors = {};
   if (!v.service) e.service = 'Please choose a service (or “Not sure yet”).';
-  if (v.name.trim().length < 2) e.name = 'Please enter your full name.';
   if (v.phone.replace(/\D/g, '').length < 10) e.phone = 'Please enter a 10-digit phone number.';
   if (v.email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.email.trim())) e.email = 'That email address doesn’t look right.';
   if (v.contactMethod === 'email' && !v.email.trim()) e.email = 'Add your email so we can reach you that way.';
@@ -174,7 +173,7 @@ export function EstimateForm({ initialService = '' }: { initialService?: string 
 
       <div className="field-row">
         <div className="field">
-          <label htmlFor="f-name">Full name <span className="req">required</span></label>
+          <label htmlFor="f-name">Name <span className="opt">optional</span></label>
           <input id="f-name" name="name" autoComplete="name" value={v.name} onChange={set('name')} {...aria('name')} />
           {err('name')}
         </div>
