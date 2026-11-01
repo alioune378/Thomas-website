@@ -8,7 +8,7 @@ export interface Faq {
 export const FAQS: Faq[] = [
   {
     q: 'How do I request an estimate?',
-    a: 'Use the estimate form on this site. Tell us what you need, where the property is, and add photos if you have them. Once a business phone number is published here, you’ll be able to call as well.',
+    a: 'Use the estimate form on this site. Tell us what you need, where the property is, and add photos if you have them. You can also call or text Zackary directly.',
     needsReview: false,
   },
   {
