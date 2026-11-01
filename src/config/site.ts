@@ -16,7 +16,7 @@ export const SITE = {
   phone: '6072806926',
 
   /** Public business email. Empty = not shown. */
-  email: '',
+  email: 'info@thomas-contracting-lansing.com',
 
   /**
    * How the estimate form behaves:
