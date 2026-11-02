@@ -110,7 +110,7 @@ export function Gallery() {
           lead="Zackary does the work himself, with his own truck and trailer. Here’s a look at recent pickups."
           light
         />
-        <div className="gallery gallery--3">
+        <div className={`gallery gallery--3${GALLERY.length === 4 ? ' gallery--4' : ''}`}>
           {GALLERY.map((g) => (
             <figure className="gallery__item" key={g.image} data-reveal>
               <img src={g.image} alt={g.alt} width={g.w} height={g.h} loading="lazy" decoding="async" />

@@ -378,7 +378,7 @@ html.js [data-reveal].is-in { opacity: 1; transform: none; }
 
 /* Real-photo gallery and owner portrait */
 .gallery--3 .gallery__item img { aspect-ratio: 4 / 3; object-position: center; }
-@media (min-width: 1000px) { .gallery.gallery--3 { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1000px) { .gallery.gallery--3 { grid-template-columns: repeat(3, 1fr); } .gallery.gallery--4 { grid-template-columns: repeat(4, 1fr); } }
 .owner { margin: 0; border-radius: var(--radius); overflow: hidden; background: var(--paper); border: 1px solid var(--line); box-shadow: var(--shadow); }
 .owner img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 30%; display: block; }
 .owner figcaption { padding: .9rem 1.1rem 1rem; display: grid; gap: .1rem; color: var(--slate-d); font-size: .95rem; }

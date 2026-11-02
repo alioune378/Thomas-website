@@ -77,6 +77,7 @@ export const NEARBY_AREAS = ['Ithaca', 'Dryden', 'Trumansburg', 'Freeville', 'Gr
 
 /** "On the job" gallery: real photos supplied by Zackary. Add more as they come in. */
 export const GALLERY = [
+  { image: '/img/job-scrap-load.webp', alt: 'Utility trailer loaded with scrap metal, fencing and an old grill from a property cleanup', caption: 'Scrap metal cleanup', w: 1200, h: 900 },
   { image: '/img/job-scrap-trailer.webp', alt: 'Old commercial freezer loaded on a utility trailer for scrap removal', caption: 'Appliance scrap pickup', w: 1200, h: 900 },
   { image: '/img/job-work-truck.webp', alt: 'Zackary’s black Chevrolet Silverado work truck', caption: 'Ready to haul', w: 1200, h: 900 },
   { image: '/img/zackary-owner.webp', alt: 'Zackary, owner of Thomas Contracting & Scrap Removal', caption: 'Zackary, owner', w: 900, h: 1200 },
