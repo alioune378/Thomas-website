@@ -83,5 +83,5 @@ export function EstimateButton({
 
 export function DraftTag({ show }: { show: boolean }) {
   if (!show) return null;
-  return <span className="draft-tag">Draft • Zackary to confirm</span>;
+  return <span className="draft-tag">Draft • Zachary to confirm</span>;
 }

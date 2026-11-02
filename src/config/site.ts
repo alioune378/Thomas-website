@@ -1,13 +1,13 @@
 /**
  * CENTRAL SITE CONFIGURATION
  * Everything business-specific lives here so it can be updated in one place.
- * Leave a value empty until Zackary has confirmed it. Nothing here is invented.
+ * Leave a value empty until Zachary has confirmed it. Nothing here is invented.
  */
 export const SITE = {
   name: 'Thomas Contracting & Scrap Removal',
   shortName: 'Thomas',
   /** Owner's first name: he answers the phone and does the work. */
-  ownerName: 'Zackary',
+  ownerName: 'Zachary',
   tagline: 'Contracting • Scrap Removal',
   city: 'Lansing',
   region: 'NY',
@@ -31,7 +31,7 @@ export const SITE = {
    */
   formMode: 'netlify' as 'demo' | 'netlify',
 
-  /** Shows small "Draft – Zackary to confirm" tags next to unverified copy. Set false at launch. */
+  /** Shows small "Draft – Zachary to confirm" tags next to unverified copy. Set false at launch. */
   showReviewFlags: false,
 
   /** Web design credit shown in the footer. */

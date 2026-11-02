@@ -10,7 +10,7 @@ export interface Service {
   icon: IconName;
   /** Examples of requests people might make. Conditional wording, not a capability list. */
   examples: string[];
-  /** Internal flag: service not yet confirmed by Zackary. Public copy stays conditional. */
+  /** Internal flag: service not yet confirmed by Zachary. Public copy stays conditional. */
   provisional: boolean;
 }
 

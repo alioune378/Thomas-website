@@ -99,7 +99,7 @@ export function Faqs({ limit }: { limit?: number }) {
   );
 }
 
-/** Real photos from Zackary's jobs. */
+/** Real photos from Zachary's jobs. */
 export function Gallery() {
   return (
     <section className="section section--dark" aria-labelledby="gal-h">
@@ -107,7 +107,7 @@ export function Gallery() {
         <SectionHead
           eyebrow="On the job"
           title={<span id="gal-h">Local, hands-on and ready to haul</span>}
-          lead="Zackary does the work himself, with his own truck and trailer. Here’s a look at recent pickups."
+          lead="Zachary does the work himself, with his own truck and trailer. Here’s a look at recent pickups."
           light
         />
         <div className={`gallery gallery--3${GALLERY.length === 4 ? ' gallery--4' : ''}`}>

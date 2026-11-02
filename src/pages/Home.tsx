@@ -65,7 +65,7 @@ export default function Home() {
       <section className="section section--split" aria-labelledby="split-h">
         <div className="container split">
           <div className="split__media" data-reveal>
-            <img src="/img/job-work-truck.webp" width="1200" height="900" alt="Zackary’s black Chevrolet Silverado work truck in Lansing, NY" loading="lazy" decoding="async" />
+            <img src="/img/job-work-truck.webp" width="1200" height="900" alt="Zachary’s black Chevrolet Silverado work truck in Lansing, NY" loading="lazy" decoding="async" />
           </div>
           <div className="split__text" data-reveal>
             <p className="eyebrow">Local work. Personal service.</p>

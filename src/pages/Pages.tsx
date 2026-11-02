@@ -129,7 +129,7 @@ export function About() {
               directly, without going through a call center or a long form.
             </p>
             <p>
-              Zackary runs the business and does the work himself, with his own truck and trailer. When you call or send
+              Zachary runs the business and does the work himself, with his own truck and trailer. When you call or send
               a request, you’re talking to the person who will show up to do the job.
             </p>
           </div>
@@ -138,8 +138,8 @@ export function About() {
               <img src="/brand/stacked.png" width="770" height="368" alt={`${SITE.name} logo`} loading="lazy" />
             </div>
             <figure className="owner">
-              <img src="/img/zackary-owner.webp" width="900" height="1200" alt="Zackary, owner of Thomas Contracting & Scrap Removal" loading="lazy" decoding="async" />
-              <figcaption><strong>Zackary</strong> Owner, Thomas Contracting &amp; Scrap Removal</figcaption>
+              <img src="/img/zachary-owner.webp" width="900" height="1200" alt="Zachary, owner of Thomas Contracting & Scrap Removal" loading="lazy" decoding="async" />
+              <figcaption><strong>Zachary</strong> Owner, Thomas Contracting &amp; Scrap Removal</figcaption>
             </figure>
           </div>
         </div>

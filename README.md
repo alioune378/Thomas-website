@@ -29,12 +29,12 @@ npm run typecheck    # tsc (not yet run in the original build environment)
 - `phone`: set to 607-280-6926 (digits only). Updates header, mobile call bar, hero, service pages, footer and contact page.
 - `email`: optional.
 - `formMode`: change `'demo'` → `'netlify'` to send real requests via Netlify Forms (the hidden form in `index.html` registers it; enable notifications under Netlify → Forms). Test one submission with a photo before launch; Netlify limits requests to ~8 MB.
-- `showReviewFlags`: `false` to remove the "Draft • Zackary to confirm" tags on FAQ answers.
+- `showReviewFlags`: `false` to remove the "Draft • Zachary to confirm" tags on FAQ answers.
 - Replace illustrative images with real photos: `public/img/` and `src/data/services.ts`, `src/data/content.ts` (`GALLERY`). Set `illustrative: false` for real ones.
 - Real reviews: replace the placeholder in `Reviews` (`src/components/sections.tsx`) only with verified, attributable reviews.
 - Add `ALLOW_INDEXING=true` and `SITE_URL`.
 
-## Information still needed from Zackary
+## Information still needed from Zachary
 1. Business phone number (and email, if public)
 2. Which services he actually offers (all six are provisional) and what materials he will/won't take
 3. Residential vs commercial work; whether he needs to be on-site/homeowner present

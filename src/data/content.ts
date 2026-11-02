@@ -1,14 +1,14 @@
 export interface Faq {
   q: string;
   a: string;
-  /** True when the answer depends on business details Zackary still has to confirm. */
+  /** True when the answer depends on business details Zachary still has to confirm. */
   needsReview: boolean;
 }
 
 export const FAQS: Faq[] = [
   {
     q: 'How do I request an estimate?',
-    a: 'Use the estimate form on this site. Tell us what you need, where the property is, and add photos if you have them. You can also call or text Zackary directly.',
+    a: 'Use the estimate form on this site. Tell us what you need, where the property is, and add photos if you have them. You can also call or text Zachary directly.',
     needsReview: false,
   },
   {
@@ -72,13 +72,13 @@ export const STEPS = [
   { n: '03', title: 'Plan the Work', text: 'Once the scope and estimate are agreed upon, we can discuss scheduling.' },
 ];
 
-/** Geographic candidates only. NOT verified service commitments until Zackary confirms. */
+/** Geographic candidates only. NOT verified service commitments until Zachary confirms. */
 export const NEARBY_AREAS = ['Ithaca', 'Dryden', 'Trumansburg', 'Freeville', 'Groton', 'Other Tompkins County communities'];
 
-/** "On the job" gallery: real photos supplied by Zackary. Add more as they come in. */
+/** "On the job" gallery: real photos supplied by Zachary. Add more as they come in. */
 export const GALLERY = [
   { image: '/img/job-scrap-load.webp', alt: 'Utility trailer loaded with scrap metal, fencing and an old grill from a property cleanup', caption: 'Scrap metal cleanup', w: 1200, h: 900 },
   { image: '/img/job-scrap-trailer.webp', alt: 'Old commercial freezer loaded on a utility trailer for scrap removal', caption: 'Appliance scrap pickup', w: 1200, h: 900 },
-  { image: '/img/job-work-truck.webp', alt: 'Zackary’s black Chevrolet Silverado work truck', caption: 'Ready to haul', w: 1200, h: 900 },
-  { image: '/img/zackary-owner.webp', alt: 'Zackary, owner of Thomas Contracting & Scrap Removal', caption: 'Zackary, owner', w: 900, h: 1200 },
+  { image: '/img/job-work-truck.webp', alt: 'Zachary’s black Chevrolet Silverado work truck', caption: 'Ready to haul', w: 1200, h: 900 },
+  { image: '/img/zachary-owner.webp', alt: 'Zachary, owner of Thomas Contracting & Scrap Removal', caption: 'Zachary, owner', w: 900, h: 1200 },
 ];
